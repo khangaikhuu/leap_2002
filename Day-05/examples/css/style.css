@@ -1,3 +1,14 @@
 div.row div {
     border: 1px solid black;
 }
+
+div.row div {
+    background-color: lightblue;
+    height: 100px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+div.spacer {
+    height: 10px;
+}
