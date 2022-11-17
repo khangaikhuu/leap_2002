@@ -1,0 +1,73 @@
+body {
+    background-color: blue;
+}
+img {
+    width: 1000px;
+}
+
+.text-container div {
+    margin: 10px;
+    width: 300px;
+
+}
+
+.text-container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+@media only screen and (max-width: 768px) {
+    body{
+        background-color: red;
+    }
+
+    #text-1 {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    body {
+        background-color: aliceblue;
+    }
+
+    .text-container {
+        flex-direction: column;
+    }
+}
+
+@media screen (min-width: 320px) and (max-width: 768px) {
+    .element {
+      /* Styles! */
+    }
+  }
+
+  @media screen (prefers-color-scheme: dark), (min-width 1200px) {
+    .element {
+      /* Styles! */
+    }
+  }
+
+  @media print and ( not(color) ) {
+    body {
+      background-color: none;
+    }
+  }
+
+
+  body {
+    background-color: #fff;
+  }
+  
+  @media (min-width: 30em) and (max-width: 80em) {
+    body {
+      background-color: purple;
+    }
+  }
+
+
+  @media (30em <= width <= 80em) {
+    /* ... */
+  }
