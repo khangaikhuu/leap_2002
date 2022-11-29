@@ -31,5 +31,11 @@ console.log(typeof nullVariable);
 console.log(myDecision);
 console.log(typeof myDecision);
 
+/**
+ * alert gargana
+ * 
+ * x`2 + y`2 - z`3 / 240 * 175
+ */
+
 
 
