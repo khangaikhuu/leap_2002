@@ -36,6 +36,18 @@ console.log(typeof myDecision);
  * 
  * x`2 + y`2 - z`3 / 240 * 175
  */
+const PI = 3.14;
+let r = 45;
+let circleLength = 2 * PI * r;
+console.log(circleLength);
+
+let height = 5;
+let width = 6;
+let h = 12;
+let trapezoidArea = (height + width )/ 2 * h;
+alert(trapezoidArea);
+
+
 
 
 
