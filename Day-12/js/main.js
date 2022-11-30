@@ -83,4 +83,51 @@
 // console.log(`${studentName} - ${studentPoint} - ${studentResult}`);
 
 
-alert ("Lorem Ipsum \"Its double quotation\" is simply dummy text of the printing and typesetting industry. \n\n \t Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.")
+// alert ("Lorem Ipsum \"Its double quotation\" is simply dummy text of the printing and typesetting industry. \n\n \t Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.")
+
+// console.log('its log');
+// console.error('it is error');
+
+// const str = "Life, the universe and everything";
+// console.log(str.length)
+
+const registerNumber = prompt('Give me your register number');
+
+// if (registerNumber.length != 10){
+//     alert('The Register number length is not correct');
+// } else {
+//     alert('The length of register number is correct');
+// }
+
+// .charAt(index) str[index]
+// console.log(str.charAt(0));
+// console.log(str[1]);
+
+// console.log(registerNumber.charAt(0));
+// console.log(registerNumber[1]);
+
+// console.log(str.substr(0, 5))
+
+
+
+const registerChar = registerNumber.substr(0, 2);
+const registerNum = registerNumber.substr(2, 9);
+// console.log(registerChar);
+// console.log(Number(registerChar));
+// console.log(Number('ABC'));
+
+
+
+if (Number.isInteger(Number(registerChar))) {
+    console.log('Your register characters are correct ')
+} else {
+    console.log('Your register characters are wrong')
+}
+
+
+
+console.log(Number('abc'));
+console.log(Number.isInteger(Number('abc')));
+console.log(Number('12312345'));
+console.log(Number.isInteger(Number('12312345')))
+
