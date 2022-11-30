@@ -118,7 +118,7 @@ const registerNum = registerNumber.substr(2, 9);
 
 
 
-if (Number.isInteger(Number(registerChar))) {
+if (!Number.isInteger(Number(registerChar)) && Number.isInteger(Number(registerNum)) && registerNumber.length == 10) {
     console.log('Your register characters are correct ')
 } else {
     console.log('Your register characters are wrong')
@@ -130,4 +130,10 @@ console.log(Number('abc'));
 console.log(Number.isInteger(Number('abc')));
 console.log(Number('12312345'));
 console.log(Number.isInteger(Number('12312345')))
+
+/**
+ *  exercise: Өгөгдсөн регистрийн дугаарын урт нь 10 тэгээд эхний 2 үсэг нь 
+ * үсэг болоод үлдсэн 8 үсэгнүүд нь тоон төрөлтэй бол Таны өгсөн регистрийн дугаар буруу байна
+ * Хэрвээ бүх нөхцөл хангагдаж байвал Таны өгсөн регистрийн дугаар зөв байна гэж хэвлэнэ үү.
+ *  */
 
