@@ -100,16 +100,40 @@ console.log(Math.ceil(Math.random() * 6))
  * INFINITE(forever) LOOP гэдэг зүйлтэй тулгарна
  */
 
-let answer = "yes";
+// let answer = "yes";
 
-while(answer == "yes") {
-    answer = prompt('Do you wanna continue the game?').toLowerCase();
-    if (answer == 'yes' ) {
-        alert('Thanks');
-    }
+// while(answer == "yes") {
+//     answer = prompt('Do you wanna continue the game?').toLowerCase();
+//     if (answer == 'yes' ) {
+//         alert('Thanks');
+//     }
+// }
+
+// console.log('game over');
+
+
+
+let max = Number(prompt('Give me a number')); // 40
+let count = 1;
+let sum = 0;
+
+while (count <= max) {
+    // console.log(count);
+    count = count + 1; // 8
+    sum = sum + count; // 18 + 8 = 26
+    console.log(count); // 8
+    console.log(sum) // 26
 }
 
-console.log('game over');
+// max = 10, count = 0, sum = 0
+// iteration 1: count = 1
+count = count + 1; // 1
+sum = sum + count; // 0 + 1 = 1
+console.log(count); // 1
+console.log(sum) // 1
 
-
-
+// iteration 1: count = 2
+count = count + 1; // 2
+sum = sum + count; // 1 + 2 = 3
+console.log(count); // 3
+console.log(sum) // 3
