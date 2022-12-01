@@ -47,23 +47,69 @@ console.log(Math.round(5.95), Math.round(5.5), Math.round(5.05));
 // output: 6 6 5
 
 console.log(Math.round(-5.05), Math.round(-5.5), Math.round(-5.95));
-  // output: -5 -5 -6
+// output: -5 -5 -6
 
-  console.log(Math.max(1, 3, 2));
-  // output: 3
-  
-  console.log(Math.max(-1, -3, -2));
-  // output: -1
+console.log(Math.max(1, 3, 2));
+// output: 3
 
-  console.log(Math.min(2, 3, 1));
-  // output: 1
-  
-  console.log(Math.min(-2, -3, -1));
-  // output: -3
+console.log(Math.max(-1, -3, -2));
+// output: -1
 
-  console.log(Math.pow(7, 3));
-  // output: 343
+console.log(Math.min(2, 3, 1));
+// output: 1
+
+console.log(Math.min(-2, -3, -1));
+// output: -3
+
+console.log(Math.pow(7, 3));
+// output: 343
 console.log(Math.sqrt(45));
 
 // x2 = y2 + z2 => x => ? input: y = 15, z = 24
+
+console.log(Math.ceil(Math.random() * 6))
+
+
+
+
+
+// // random number between max and min
+// console.log(Math.floor(Math.random() * (max - min) + min));
+// console.log(Math.floor(Math.random() * (max - min) + min));
+// console.log(Math.floor(Math.random() * (max - min) + min));
+// console.log(Math.floor(Math.random() * (max - min) + min));
+// console.log(Math.floor(Math.random() * (max - min) + min));
+// console.log(Math.floor(Math.random() * (max - min) + min));
+
+// let first = prompt('Give me your minimum number');
+// let second = prompt('Give me your second number');
+// let howMany = prompt('How many times?')
+// const max = Math.max(first, second);
+// const min = Math.min(first, second);
+// let count = 1;
+
+// console.log('loop starts')
+// while (count <= Number(howMany)) {
+//     console.log(Math.floor(Math.random() * (max - min) + min));
+//     count = count + 1;
+// }
+
+// console.log('loop ended')
+/**
+ * Хэрвээ бид нар count = count + 1 гэдгийг бичихгүй бол 
+ * INFINITE(forever) LOOP гэдэг зүйлтэй тулгарна
+ */
+
+let answer = "yes";
+
+while(answer == "yes") {
+    answer = prompt('Do you wanna continue the game?').toLowerCase();
+    if (answer == 'yes' ) {
+        alert('Thanks');
+    }
+}
+
+console.log('game over');
+
+
 
