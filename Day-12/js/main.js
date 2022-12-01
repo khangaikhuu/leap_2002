@@ -137,3 +137,5 @@ console.log(Number.isInteger(Number('12312345')))
  * Хэрвээ бүх нөхцөл хангагдаж байвал Таны өгсөн регистрийн дугаар зөв байна гэж хэвлэнэ үү.
  *  */
 
+
+Number.isInteger(Number.isInteger(prompt('hello', 'hi')))
