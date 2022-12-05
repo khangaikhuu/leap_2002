@@ -57,7 +57,7 @@ while(!isSunk) {
 }
 
 // game loop is ended
-if (isSunk && guesses < 6) {
+if (isSunk && guesses < 6) {~
     alert('You WON');
 } else if (guesses > 6) {
     alert('You LOST');
