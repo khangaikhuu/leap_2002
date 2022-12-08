@@ -87,4 +87,45 @@ const names = ['Marlaa', 'Javkhaa', 'Javkhlan', 'Dorj'];
 names.sort();
 console.log(names);
 
+console.log('array reverse');
+function arrayReverse(arr) {
+    let tempArray = [];
+    for(let i = arr.length - 1; i >= 0;  i--) {
+        tempArray.push(arr[i]);
+    }
+    return tempArray;
+}
 
+let arrReverse = [4, 5, 1, 8]
+console.log(arrayReverse(arrReverse)); // [8, 1, 5, 4]
+
+const numbers = ['one', 'two', 'three'];
+console.log('array1:', numbers);
+const reversed = numbers.reverse();
+console.log('reversed:', reversed);
+
+
+const nameSlice = ['bat', 'dorj', 'purev', 'davaa', 'tomor'];
+console.log(nameSlice.slice(2));
+console.log(nameSlice);
+
+function nameSliceFunc (arr, index) {
+    // let tempArray = []
+    // for(let i = index; i < arr.length; i++){
+    //     tempArray.push(arr[i]);
+    // }
+    // return tempArray;
+    for(let i = 0; i < index; i++) {
+        arr.shift()
+    }
+    return arr;
+}
+
+console.log(nameSliceFunc([1, 2, 3, 4, 5], 3)) // [4, 5]
+console.log('splice method')
+
+const spliceNames = ['Davaa', 'Lkhagva', 'Purev', 'Byamba'];
+spliceNames.splice(1, 0, 'Myagmar');
+// 1 дэх индекс дээр шинээр утга нэмэх үйлдэл
+console.log(spliceNames);
+// add "baasan" to the position between "purev" and 'byamba'
