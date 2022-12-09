@@ -41,3 +41,9 @@ rabbit2.jump()
 
 
 
+let person = {
+    firstname: "Наранбаяр",
+    lastName: "Эрдэнэ",
+  };
+
+  person['firstname']
