@@ -22,3 +22,23 @@ for(let i = 0; i < document.getElementById('aimagNames').getElementsByTagName('l
         document.getElementById('aimagNames').getElementsByTagName('li')[i].style='background-color: black;'
     }
 }
+
+console.log(document.querySelector('#aimagNames'));
+console.log(document.querySelector('.khangai'));
+
+
+console.log(document.getElementsByClassName('khangai'));
+console.log(document.querySelectorAll('.khangai'));
+document.querySelector('img').src = './img/pic.png'
+
+
+
+const newDiv = document.createElement("h2");
+const newContent = document.createTextNode("Манай сайтад тавтай морил");
+newDiv.appendChild(newContent);
+const main = document.getElementsByTagName("body");
+const h1 = document.querySelector('h1');
+h1.appendChild(newDiv);
+
+
+console.log(document.getElementsByTagName("body"));
