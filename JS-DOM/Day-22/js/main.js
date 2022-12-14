@@ -30,6 +30,8 @@ let x = () => {
 
 // TODO APP
 let todoCreate = document.getElementById('todo-create');
+let todoList = document.getElementById('todo-list');
+console.log(todoList)
 
 let button = document.getElementById('add');
 console.log(button);
@@ -37,12 +39,17 @@ console.log(button);
 button.addEventListener('click', () => {
     console.log('add clicked')
     console.log(todoCreate.value);
+    let input = document.createElement('p');
+    input.innerHTML = `${todoCreate.value} <input value=${todoCreate.value} disabled> <button>Test</button>`;
+
+    todoList.appendChild(input);
+    todoList.appendChild('<p>Test</p>')
+    
 
 });
 
 
-let todoList = document.getElementById('todo-list');
-console.log(todoList)
+
 
 let p = document.createElement('p');
 console.log(p)
