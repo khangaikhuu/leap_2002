@@ -25,4 +25,27 @@ let x = () => {
 
 
 
-setTimeout ()
+
+
+
+// TODO APP
+let todoCreate = document.getElementById('todo-create');
+
+let button = document.getElementById('add');
+console.log(button);
+
+button.addEventListener('click', () => {
+    console.log('add clicked')
+    console.log(todoCreate.value);
+
+});
+
+
+let todoList = document.getElementById('todo-list');
+console.log(todoList)
+
+let p = document.createElement('p');
+console.log(p)
+p.textContent = 'First';
+
+todoList.appendChild(p)
